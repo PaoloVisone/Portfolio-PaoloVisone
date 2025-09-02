@@ -19,10 +19,10 @@ app.use(cors({
     origin: process.env.FRONTEND_URL || 'http://localhost:3000',
     credentials: true
 }
-))
+));
 
 // Logging delle richieste
-app.use(morgan('combined'))
+app.use(morgan('combined'));
 
 // Parser JSON con limite
 app.use(express.json({ limit: '10mb' }));
